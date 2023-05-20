@@ -22,7 +22,7 @@ Le résultat de la transformation peut être utilisé sur Zotero, voir : https:/
 
 ## Statistiques 
 
-* 64403 références en tout
+- 64403 références en tout
 - 21390 journal articles
 - 17956 books
 - 13368 book chapters
