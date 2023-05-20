@@ -22,11 +22,12 @@ Le résultat de la transformation peut être utilisé sur Zotero, voir : https:/
 
 ## Statistiques 
 
-* 64403 références en tout
-- 21390 journal articles
+Il y a 64403 références en tout (64397 sur Zotero)
+
+Dont : 
+- 26616 journal articles (21390 traditionnel, 5228 en ligne)
 - 17956 books
 - 13368 book chapters
-- 5228 online articles
 - 5131 edited volumes
 - 1296 theses
 - 34 datasets / CD-roms
