@@ -96,6 +96,7 @@ def most_frequent_pubyears(bibdata):
     pubyear_counts = dict(sorted(pubyear_counts.items(), reverse=False))
     print(pubyear_counts)
 
+    # Filter data
     pubyear_counts = pd.DataFrame.from_dict(pubyear_counts, orient="index").reset_index().rename(mapper={"index":"year", 0 : "count"}, axis="columns")    #pubyear_counts = pubyear_counts[pubyear_counts[0] == 1991]
     pubyear_counts = pubyear_counts[pubyear_counts["year"].str.isnumeric()]
     pubyear_counts.set_index("year", inplace=True)
@@ -103,7 +104,6 @@ def most_frequent_pubyears(bibdata):
     pubyear_counts.drop(["207", "22", "30", "42", "58", "76", "78", "20", "201"], inplace=True)
     pubyear_counts.reset_index(inplace=True)
     print(pubyear_counts.head())
-
 
     # Create figure
     plt.figure(figsize=(12,6))
