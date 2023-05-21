@@ -38,6 +38,6 @@ The publisher names occurring most frequently in the dataset, irrespective of co
 
 ## Distribution of publications per year 
 
-The dataset contains 64169 publication years, with 87 different publication years recorded (some of them are errors). 
+The dataset contains 64169 publication years, with 87 different publication years recorded (some of them are errors). Here, only data starting in 1986 is shown (the bibliography was launched in 1992). 
 
 ![](/analysis/pubyear_counts.png)
