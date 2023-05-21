@@ -19,7 +19,7 @@ Versions:
 * Le type d'entrée des "communications" n'a pas été retenu, parce qu'il n'y a qu'une poignée d'entrées de ce type. 
 * Pour le type d'entrée "internet", plusieurs ISSN ont été transposés du champ ISBN vers le champ ISSN. 
 * Un tout petit nombre de désignations du type d'entrée ont été corrigées : "2Collecti" (1x) et "4Article4" (1x). 
-* Pour les dates de parution, seul l'année a été retenue pour l'instant. 
+* Pour les dates de parution, seul l'année a été retenue. 
 * Le bon ordonnement des noms et prénoms des auteurs ou éditeurs est difficile, il peut donc y avoir des erreurs. 
 * La source de données ne fait pas de distinction entre les URL et les DOI ; par conséquent, ils sont tous répertoriés dans le champ URL. Cependant, peu de DOI sont présents de toute manière. 
 * L'information sur la langue d'une publication a été ajoutée automatiquement, avec le module lingua-py. Cette information peut être éronnée dans certains cas. 
