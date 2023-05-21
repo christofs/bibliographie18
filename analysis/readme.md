@@ -36,3 +36,8 @@ The publisher names occurring most frequently in the dataset, irrespective of co
 - Gallimard: 523
 - Cambridge University Press: 459
 
+## Distribution of publications per year 
+
+The dataset contains 64169 publication years, with 87 different publication years recorded (some of them are errors). 
+
+![](/analysis/pubyear_counts.png)
