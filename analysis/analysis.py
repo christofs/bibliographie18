@@ -117,8 +117,8 @@ def most_frequent_pubyears(bibdata):
 
 def main(): 
     bibdata = read_json(bibdatafile) 
-    #most_frequent_persons(bibdata)
-    #most_frequent_publishers(bibdata)
+    most_frequent_persons(bibdata)
+    most_frequent_publishers(bibdata)
     most_frequent_pubyears(bibdata)
 
 main()
