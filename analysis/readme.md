@@ -69,7 +69,7 @@ There are 56860 publications in the bibliography that have an author role (for i
 - 3 authors: 9 (0.02 %)
 - 4 authors: 2 (0.004%)
 
-There are 17135 publications in the bibliograohy that have an editor role (for instance edited volumes, proceedings, etc.). Shown here is the number of editors in each of these publications. Dual editorship is the most common case, but single editorship and triple editorship are also very common. Higher numbers of editors (4 or 5), are also not uncommon. 
+There are 17135 publications in the bibliography that have an editor role (for instance edited volumes, proceedings, special issues, textual editions, etc.). Shown here is the number of editors in each of these publications. Dual editorship is the most common case, but single editorship and triple editorship are also very common. Higher numbers of editors are rarer. 
 
 - 1 editor: 5558 (32.4%)
 - 2 editors: 7743 (45.2%)
