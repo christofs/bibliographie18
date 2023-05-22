@@ -2,6 +2,8 @@
 
 The analyses are based on the RDF version of the data. 
 
+Note that all numbers can be expected to shift slighly as the process of cleaning the data proceeds. Collaborative authorship / editorship will most likely be most affected by corrections. 
+
 
 ## Distribution of publications per year 
 
