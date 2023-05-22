@@ -201,21 +201,84 @@ def most_frequent_pubtypes(pubtypes):
     pubtypes_counts = dict(sorted(pubtypes_counts.items(), key = lambda item: item[1], reverse=True)[:10])
     print(pubtypes_counts)
 
+
+
+
+def network_coeditors(bibdata): 
+    # Find all instances of editors
+    xpath = "//bib:editors"
+    editors = bibdata.xpath(xpath, namespaces=namespaces)
+    print(len(editors), "instances of Element 'editors'")
+
+    # Collect the names of each person within each editors element
+    coeditors = []
+    for item in editors:
+        xpath = "rdf:Seq/rdf:li/foaf:Person"
+        coeditors_elements = item.xpath(xpath, namespaces=namespaces)
+        coeditors_names = []
+        # Get the names (full name or first name, last name) from each person
+        for item in coeditors_elements: 
+            if len(item) == 2: 
+                coeditors_names.append(item[0].text + ", " + item[1].text)
+        #print(coeditors_names)
+        coeditors.append(coeditors_names)
+    #print(all_coeditors)
+
+    # Establish the count of each collaboration between editors
+    import itertools 
+    all_coeditor_combinations = []
+    for item in coeditors: 
+        coeditor_combinations = list(itertools.combinations(item, 2))
+        coeditor_combinations = [tuple(sorted(item)) for item in coeditor_combinations]
+        for coedcomb in coeditor_combinations: 
+            all_coeditor_combinations.append(coedcomb)
+    ccc = dict(Counter(all_coeditor_combinations)) # ccc = coeditor_combinations_count
+
+    # Transform to a DataFrame
+    ccc = pd.DataFrame.from_dict(ccc, orient="index", columns=["count"])
+    ccc = ccc.reset_index()
+    ccc_split = pd.DataFrame(ccc["index"].tolist())
+    ccc_merged = ccc_split.merge(ccc, left_index=True, right_index=True)
+    ccc = ccc_merged.drop(["index"], axis=1)
+    ccc = ccc.rename({0 : "coeditor1", 1 : "coeditor2"}, axis=1)
+    ccc = ccc.sort_values(by="count", ascending=False)
+    print(ccc.head())
+    with open(join(wdir, "coeditor-counts.csv"), "w", encoding="utf8") as outfile: 
+        ccc.to_csv(outfile, sep=";")
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
     
 
 # === Main === 
 
 def main(): 
     bibdata = read_json(bibdatafile)
-    #personnames = get_personnames(bibdata)
-    #most_frequent_personnames(personnames)
-    #publishers = get_publishers(bibdata)
-    #most_frequent_publishers(publishers)
-    pubyear_count = get_pubyears(bibdata)
-    visualize_pubyears(pubyear_count)
-    #get_number_collaborators(bibdata)
     #pubtypes = get_pubtypes(bibdata)
     #most_frequent_pubtypes(pubtypes)
+    #pubyear_count = get_pubyears(bibdata)
+    #visualize_pubyears(pubyear_count)
+    #personnames = get_personnames(bibdata)
+    #most_frequent_personnames(personnames)
+    #get_number_collaborators(bibdata)
+    network_coeditors(bibdata)
+    #publishers = get_publishers(bibdata)
+    #most_frequent_publishers(publishers)
 
 
 main()
