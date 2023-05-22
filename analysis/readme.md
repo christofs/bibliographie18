@@ -1,6 +1,6 @@
-# Some analyses of the dataset 
+# Analyses of the 'Bibliographie: XVIIIe' dataset 
 
-The analyses are based on the RDF version of the data. 
+The analyses are based on the RDF version of the data (currently, v0.1.0, May 20, 2023) and have been performed by Christof Schöch. 
 
 Note that all numbers can be expected to shift slighly as the process of cleaning the data proceeds. Collaborative authorship / editorship as well as the publication types will most likely be most affected by corrections. 
 
