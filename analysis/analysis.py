@@ -9,6 +9,8 @@ import re
 import seaborn as sns
 from matplotlib import pyplot as plt
 from os.path import join
+from os.path import realpath, dirname
+import os
 from lxml import etree
 from io import StringIO, BytesIO
 from collections import Counter
@@ -17,8 +19,9 @@ import pandas as pd
 
 # === Files and parameters === 
 
-bibdatafile = join("/", "media", "christof", "Data", "Github", "christofs", "bibliographie18", "formats", "bibliographie18_Zotero-RDF.rdf") 
-#TEST#bibdatafile = join("/", "media", "christof", "Data", "Github", "christofs", "bibliographie18", "analysis", "bibliographie18_Zotero-RDF_TEST.rdf") 
+wdir  = realpath(dirname(__file__))
+bibdatafile = join(wdir, "..", "formats", "bibliographie18_Zotero-RDF.rdf") 
+#bibdatafile = join(wdir, "bibliographie18_Zotero-RDF_TEST.rdf") 
 
 namespaces = {
     "foaf" : "http://xmlns.com/foaf/0.1/",
@@ -78,6 +81,13 @@ def get_number_collaborators(bibdata):
     num_coauthors_counts = Counter(num_coauthors)
     print(num_coauthors_counts)
 
+    # Calculate percentages
+    num_coauthors_perc = {}
+    total = sum(num_coauthors_counts.values())
+    for key,val in num_coauthors_counts.items():
+        num_coauthors_perc[key] = str(round(val/total * 100, 3)) + '%'
+    print(num_coauthors_perc)
+
     # Find all instances of editors
     num_coeditors = []
     xpath = "//bib:editors"
@@ -89,7 +99,14 @@ def get_number_collaborators(bibdata):
         coeditors = item.xpath(xpath, namespaces=namespaces)
         num_coeditors.append(len(coeditors))
     num_coeditors_counts = Counter(num_coeditors)
-    print(num_coeditors_counts)
+    print(dict(num_coeditors_counts))
+
+    # Calculate percentages
+    num_coeditors_perc = {}
+    total = sum(num_coeditors_counts.values())
+    for key,val in num_coeditors_counts.items():
+        num_coeditors_perc[key] = str(round(val/total * 100, 2)) + '%'
+    print(num_coeditors_perc)
 
         
 
