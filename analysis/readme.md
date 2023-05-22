@@ -82,6 +82,4 @@ There are 17135 publications in the bibliography that have an editor role (for i
 
 ## Co-editor networks 
 
-![](figures/coeditor-counts_1.png)
-
-![](figures/coeditor-counts_1.svg)
+(in progress)
