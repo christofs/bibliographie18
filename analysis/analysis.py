@@ -27,6 +27,7 @@ namespaces = {
     "foaf" : "http://xmlns.com/foaf/0.1/",
     "bib" : "http://purl.org/net/biblio#",
     "dc" : "http://purl.org/dc/elements/1.1/",
+    "z" : "http://www.zotero.org/namespaces/export#",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     }
 
@@ -181,17 +182,40 @@ def visualize_pubyears(pubyear_counts):
 
 
 
+def get_pubtypes(bibdata): 
+    print("\nPublication types")
+
+    # Find all the instances of publication types
+    pubtypes = []
+    xpath = "//z:itemType/text()"
+    pubtypes = bibdata.xpath(xpath, namespaces=namespaces)
+    print(len(pubtypes), "instances of publication type")
+    return pubtypes
+
+
+
+def most_frequent_pubtypes(pubtypes): 
+    # Count the occurrences, find the 10 most frequently mentioned persons
+    pubtypes_counts = Counter(pubtypes)
+    print(len(pubtypes_counts), "types of publication types")
+    pubtypes_counts = dict(sorted(pubtypes_counts.items(), key = lambda item: item[1], reverse=True)[:10])
+    print(pubtypes_counts)
+
+    
+
 # === Main === 
 
 def main(): 
     bibdata = read_json(bibdatafile)
-    #personnames = get_personnames(bibdata)
-    #most_frequent_personnames(personnames)
-    #publishers = get_publishers(bibdata)
-    #most_frequent_publishers(publishers)
-    #pubyear_count = get_pubyears(bibdata)
-    #visualize_pubyears(pubyear_count)
+    personnames = get_personnames(bibdata)
+    most_frequent_personnames(personnames)
+    publishers = get_publishers(bibdata)
+    most_frequent_publishers(publishers)
+    pubyear_count = get_pubyears(bibdata)
+    visualize_pubyears(pubyear_count)
     get_number_collaborators(bibdata)
+    pubtypes = get_pubtypes(bibdata)
+    most_frequent_pubtypes(pubtypes)
 
 
 main()

@@ -2,7 +2,7 @@
 
 The analyses are based on the RDF version of the data. 
 
-Note that all numbers can be expected to shift slighly as the process of cleaning the data proceeds. Collaborative authorship / editorship will most likely be most affected by corrections. 
+Note that all numbers can be expected to shift slighly as the process of cleaning the data proceeds. Collaborative authorship / editorship as well as the publication types will most likely be most affected by corrections. 
 
 
 ## Distribution of publications per year 
@@ -14,7 +14,14 @@ The dataset contains 64169 publication years, with 87 different publication year
 
 ## Distribution of publication types in the dataset
 
-(tbd.)
+There are 64397 instances of publication type (each entry has one), with just 6 different types of publication types. This number results from the original bibliography's data model, but the labels used below are Zotero's labels. 
+
+- journalArticle: 26615
+- book: 23083
+- bookSection: 13368
+- thesis: 1296
+- dataset: 34
+- webpage: 1
 
 
 ## Most frequently occurring person names 
