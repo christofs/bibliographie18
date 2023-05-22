@@ -9,7 +9,7 @@ Note that all numbers can be expected to shift slighly as the process of cleanin
 
 The dataset contains 64169 publication years, with 87 different publication years recorded (some of them are errors). Here, only data starting in 1986 is shown (the bibliography was launched in 1992). 
 
-![](/analysis/pubyear_counts.png)
+![](/analysis/figures/pubyear_counts.png)
 
 
 ## Distribution of publication types in the dataset

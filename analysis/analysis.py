@@ -178,7 +178,7 @@ def visualize_pubyears(pubyear_counts):
     plt.figure(figsize=(12,6))
     fig = sns.barplot(data = pubyear_counts, x="year", y="count")
     fig.set_xticklabels(fig.get_xticklabels(), rotation=45)
-    plt.savefig("pubyear_counts.png")
+    plt.savefig(join(wdir, "figures", "pubyear_counts.png"))
 
 
 
@@ -207,15 +207,15 @@ def most_frequent_pubtypes(pubtypes):
 
 def main(): 
     bibdata = read_json(bibdatafile)
-    personnames = get_personnames(bibdata)
-    most_frequent_personnames(personnames)
-    publishers = get_publishers(bibdata)
-    most_frequent_publishers(publishers)
+    #personnames = get_personnames(bibdata)
+    #most_frequent_personnames(personnames)
+    #publishers = get_publishers(bibdata)
+    #most_frequent_publishers(publishers)
     pubyear_count = get_pubyears(bibdata)
     visualize_pubyears(pubyear_count)
-    get_number_collaborators(bibdata)
-    pubtypes = get_pubtypes(bibdata)
-    most_frequent_pubtypes(pubtypes)
+    #get_number_collaborators(bibdata)
+    #pubtypes = get_pubtypes(bibdata)
+    #most_frequent_pubtypes(pubtypes)
 
 
 main()
