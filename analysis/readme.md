@@ -14,10 +14,10 @@ The dataset contains 64169 publication years, with 87 different publication year
 
 ## Distribution of publication types in the dataset
 
-There are 64397 instances of publication type (each entry has one), with just 6 different types of publication types. This number results from the original bibliography's data model, but the labels used below are Zotero's labels. 
+There are 64397 instances of publication type (each entry has one), with just 6 different types of publication types. This number results from the original bibliography's data model, but the labels used below are Zotero's labels. The exception to this rule is that the distinction between monographs and edited volumes is lost in Zotero, which considers both to be books.  
 
 - journalArticle: 26615
-- book: 23083
+- book (monographs and edited volumes): 23083
 - bookSection: 13368
 - thesis: 1296
 - dataset: 34
