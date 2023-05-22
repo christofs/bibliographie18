@@ -21,7 +21,7 @@ import pandas as pd
 
 wdir  = realpath(dirname(__file__))
 bibdatafile = join(wdir, "..", "formats", "bibliographie18_Zotero-RDF.rdf") 
-#bibdatafile = join(wdir, "bibliographie18_Zotero-RDF_TEST.rdf") 
+#bibdatafile = join(wdir, "..", "formats", "bibliographie18_Zotero-RDF_TEST.rdf") 
 
 namespaces = {
     "foaf" : "http://xmlns.com/foaf/0.1/",
