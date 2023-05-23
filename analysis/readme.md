@@ -88,7 +88,7 @@ The following shows a network of the top 20 co-editors and all of their co-edito
 
 ![Network showing the top 20 co-editors and all of their co-editors, created using Gephi.](figures/coeditors_top2.svg)
 
-This figure is available also as a [zoom-able image file](https://raw.githubusercontent.com/christofs/bibliographie18/main/analysis/figures/coeditors_top2.svg).  
+This figure is available also as a [zoom-able image file](https://raw.githubusercontent.com/christofs/bibliographie18/main/analysis/figures/coeditors_top2.svg) and [with somewhat friendlier colors but no community detection](https://raw.githubusercontent.com/christofs/bibliographie18/main/analysis/figures/coeditors_top1.svg).  
 
 We basically see three key co-editor networks (the different colors are based on an algorithmic community or cluster detection): 
 
