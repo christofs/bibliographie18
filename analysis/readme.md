@@ -94,7 +94,7 @@ We basically see three key co-editor networks:
 
 - Porret, Rosset, Majeur, Farkas, Baczko et al. 
 - Leuwers, Bourdin Biard et al. 
-- Sermain, Herman, Pelckmans, Escola, Omacini, Peeters et al. 
+- Sermain, Herman, Pelckmans, Rosset, Escola, Omacini, Peeters et al. 
 
 Some initial observations: While Porret appears to be the most productive co-editor overall, this is achived with some frequent, but also with a large number of less frequent coeditors. Inversely, the most intense collaboration appears to be between Herman and Pelckmans, who seem to avoid one-off collaborations. Finally, Rosset also functions as a bridge linking Porret and Herman and their respective coeditor networks, while no similar bridge exists towards the Leuwers et al. network. 
 
