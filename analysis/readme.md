@@ -23,6 +23,12 @@ There are 64397 instances of publication type (each entry has one), with just 6 
 - dataset: 34
 - webpage: 1
 
+(Visualize as a bubble chart?)
+
+## Distribution of languages in the dataset 
+
+(Coming next.)
+
 
 ## Most frequently occurring person names 
 
@@ -99,3 +105,6 @@ We basically see three key co-editor networks (the different colors are based on
 
 Some initial observations: While Porret appears to be the most productive co-editor overall, this is achived with some frequent, but also with a large number of less frequent coeditors. Inversely, the most intense collaboration appears to be between Herman and Pelckmans, who seem to avoid one-off collaborations. Finally, Rosset also functions as a bridge linking Porret and Baczko on the one hand, and Herman and Pelckmans on the other hand, and their respective coeditor networks. No similar bridge exists towards the Leuwers et al. network. The smaller Didier cluster is also connected to Sermain.  
 
+## Developments over time 
+
+(Coming next. Most frequently mentioned authors over time. Co-authorship / co-editorship numbers over time. Languages over time.)
