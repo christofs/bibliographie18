@@ -27,7 +27,11 @@ There are 64397 instances of publication type (each entry has one), with just 6 
 
 ## Distribution of languages in the dataset 
 
-(Coming next.)
+There are 64396 instances of the `language` element in the dataset. For the moment, only 8 different languages have been identified, although there are no doubt more languages represented in the dataset. (These will be added with further refinement of the data.) 
+
+![](figures/languages_counts.png)
+
+Few surprises in the major languages so far: French reigns supreme, before English, with Italian, German and Spanish quite a bit behind. 
 
 
 ## Most frequently occurring person names 

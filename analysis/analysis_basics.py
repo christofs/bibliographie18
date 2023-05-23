@@ -154,17 +154,45 @@ def most_frequent_pubtypes(pubtypes):
 
 
 
+def get_languages(bibdata): 
+    print("\nLanguages")
+
+    # Find all the instances of "language" Element and its content
+    xpath = "//z:language/text()"
+    languages = bibdata.xpath(xpath, namespaces=namespaces)
+    print(len(languages), "instances of language")
+
+    # Identify frequency of languages
+    languages_counts = Counter(languages)
+    print(len(languages_counts), "number of different languages")
+    languages_counts = dict(sorted(languages_counts.items(), key = lambda item: item[1], reverse=True)[:10])
+    print(languages_counts)
+
+    # Visualize using a simple bar chart 
+    lc = pd.DataFrame.from_dict(languages_counts, orient="index", columns=["count"]).reset_index().rename({"index" : "language"}, axis=1)
+    print(lc.head())
+    plt.figure(figsize=(12,6))
+    pal = sns.color_palette("Blues", len(lc))
+    fig = sns.barplot(data=lc, x="language", y="count", palette=pal)
+    fig.set_xticklabels(fig.get_xticklabels(), rotation=30)
+    for i in fig.containers:
+        fig.bar_label(i,)
+    plt.savefig(join(wdir, "figures", "languages_counts.png"))
+
+
+
 # === Main === 
 
 def main(): 
     bibdata = read_json(bibdatafile)
-    pubtypes = get_pubtypes(bibdata)
-    most_frequent_pubtypes(pubtypes)
-    pubyear_count = get_pubyears(bibdata)
-    visualize_pubyears(pubyear_count)
-    personnames = get_personnames(bibdata)
-    most_frequent_personnames(personnames)
-    publishers = get_publishers(bibdata)
-    most_frequent_publishers(publishers)
+    #pubtypes = get_pubtypes(bibdata)
+    #most_frequent_pubtypes(pubtypes)
+    #pubyear_count = get_pubyears(bibdata)
+    #visualize_pubyears(pubyear_count)
+    #personnames = get_personnames(bibdata)
+    #most_frequent_personnames(personnames)
+    #publishers = get_publishers(bibdata)
+    #most_frequent_publishers(publishers)
+    get_languages(bibdata)
 
 main()
