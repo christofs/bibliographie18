@@ -82,11 +82,19 @@ There are 17135 publications in the bibliography that have an editor role (for i
 
 ## Co-editor networks 
 
-As shown above, editorship is an area of particularly intense collaboration in the community of Dix-huitiémistes, based on the data in the bibliography. 
+As shown above, editorship is an area of particularly intense collaboration in the community of Dix-huitiémistes, based on the data in the bibliography. The following is an initial, experimental attempt to elucidate the data using network visualization. 
 
-The following is an experimental attempt at a network visualization of the top 20 co-editors (and all of their co-editors). The data of collaborations for edited volumes and editions has been massively reduced for this visualization. See the coeditor data in the `data` folder for more details.  
+The following shows a network of the top 20 co-editors and all of their co-editors, resulting in 148 different co-editor pairs. Each node is one editor, and each time two people have co-edited a publication, a link between them is created. The more co-editorships a person accumulates, the larger the node. The more co-editorships two people share, the thicker the edge connecting them. For this visualization, the full data of collaborations for edited volumes and editions has been massively reduced. Different parameters may strongly affect the results. See the full coeditor data in the `data` folder for more details.  
 
-![](figures/coeditors_top1.svg)
+![Network showing the top 20 co-editors and all of their co-editors, created using Gephi.](figures/coeditors_top1.svg)
 
-This is available also as a [zoom-able image file](https://raw.githubusercontent.com/christofs/bibliographie18/main/analysis/figures/coeditors_top1.svg). 
+This figure is available also as a [zoom-able image file](https://raw.githubusercontent.com/christofs/bibliographie18/main/analysis/figures/coeditors_top1.svg).  
+
+We basically see three key co-editor networks: 
+
+- Porret, Rosset, Majeur, Farkas, Baczko et al. 
+- Leuwers, Bourdin Biard et al. 
+- Sermain, Herman, Pelckmans, Escola, Omacini, Peeters et al. 
+
+Some initial observations: While Porret appears to be the most productive co-editor overall, this is achived with some frequent, but also with a large number of less frequent coeditors. Inversely, the most intense collaboration appears to be between Herman and Pelckmans, who seem to avoid one-off collaborations. Finally, Rosset also functions as a bridge linking Porret and Herman and their respective coeditor networks, while no similar bridge exists towards the Leuwers et al. network. 
 
