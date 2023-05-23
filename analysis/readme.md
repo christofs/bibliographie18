@@ -86,15 +86,16 @@ As shown above, editorship is an area of particularly intense collaboration in t
 
 The following shows a network of the top 20 co-editors and all of their co-editors, resulting in 148 different co-editor pairs. Each node is one editor, and each time two people have co-edited a publication, a link between them is created. The more co-editorships a person accumulates, the larger the node. The more co-editorships two people share, the thicker the edge connecting them. For this visualization, the full data of collaborations for edited volumes and editions has been massively reduced. Different parameters may strongly affect the results. See the full coeditor data in the `data` folder for more details.  
 
-![Network showing the top 20 co-editors and all of their co-editors, created using Gephi.](figures/coeditors_top1.svg)
+![Network showing the top 20 co-editors and all of their co-editors, created using Gephi.](figures/coeditors_top2.svg)
 
-This figure is available also as a [zoom-able image file](https://raw.githubusercontent.com/christofs/bibliographie18/main/analysis/figures/coeditors_top1.svg).  
+This figure is available also as a [zoom-able image file](https://raw.githubusercontent.com/christofs/bibliographie18/main/analysis/figures/coeditors_top2.svg).  
 
-We basically see three key co-editor networks: 
+We basically see three key co-editor networks (the different colors are based on an algorithmic community or cluster detection): 
 
 - Porret, Rosset, Majeur, Farkas, Baczko et al. 
-- Leuwers, Bourdin Biard et al. 
-- Sermain, Herman, Pelckmans, Rosset, Escola, Omacini, Peeters et al. 
+- Sermain, Herman, Pelckmans, Escola, Omacini, Peeters, Paschoud, Berchtold et al. 
+- Leuwers, Bourdin, Biard, Simien, Serna, Antoine et al. 
+- Smaller clusters with Didier and Neefs as well around Kolving and Mortier. 
 
-Some initial observations: While Porret appears to be the most productive co-editor overall, this is achived with some frequent, but also with a large number of less frequent coeditors. Inversely, the most intense collaboration appears to be between Herman and Pelckmans, who seem to avoid one-off collaborations. Finally, Rosset also functions as a bridge linking Porret and Herman and their respective coeditor networks, while no similar bridge exists towards the Leuwers et al. network. 
+Some initial observations: While Porret appears to be the most productive co-editor overall, this is achived with some frequent, but also with a large number of less frequent coeditors. Inversely, the most intense collaboration appears to be between Herman and Pelckmans, who seem to avoid one-off collaborations. Finally, Rosset also functions as a bridge linking Porret and Baczko on the one hand, and Herman and Pelckmans on the other hand, and their respective coeditor networks. No similar bridge exists towards the Leuwers et al. network. The smaller Didier cluster is also connected to Sermain.  
 
