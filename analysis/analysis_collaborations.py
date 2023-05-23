@@ -18,6 +18,7 @@ from collections import Counter
 import pandas as pd
 
 
+
 # === Files and parameters === 
 
 wdir  = realpath(dirname(__file__))
@@ -90,7 +91,6 @@ def get_number_collaborators(bibdata):
         num_coeditors_perc[key] = str(round(val/total * 100, 2)) + '%'
     print(num_coeditors_perc)
 
-        
 
 
 def network_coeditors(bibdata): 
@@ -136,7 +136,6 @@ def network_coeditors(bibdata):
     print(ccc.shape, "shape of dataframe")
     with open(join(wdir, "data", "coeditor-counts_full.csv"), "w", encoding="utf8") as outfile: 
         ccc.to_csv(outfile, sep=";")
-    
 
     # Filter the DataFrame to make it manageable for visualization
     # Determine the top N most frequent co-editors
@@ -159,22 +158,11 @@ def network_coeditors(bibdata):
 
 
 
-
-
-
-
-
-
-
-
-    
-
 # === Main === 
 
 def main(): 
     bibdata = read_xml(bibdatafile)
-    #get_number_collaborators(bibdata)
+    get_number_collaborators(bibdata)
     network_coeditors(bibdata)
-
 
 main()
