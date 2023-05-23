@@ -82,4 +82,9 @@ There are 17135 publications in the bibliography that have an editor role (for i
 
 ## Co-editor networks 
 
-(in progress)
+As shown above, editorship is an area of particularly intense collaboration in the community of Dix-huitiémistes, based on the data in the bibliography. 
+
+The following is an experimental attempt at a network visualization of the top 20 co-editors (and all of their co-editors). The data of collaborations for edited volumes and editions has been massively reduced for this visualization.  
+
+![](figures/coeditors_top1.svg)
+
