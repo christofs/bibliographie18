@@ -33,11 +33,10 @@ Quelques premières analyses des données sont disponibles ici : https://github.
 
 ## Statistiques 
 
-Il y a 64403 références en tout (64397 sur Zotero). 
+Il y a 64403 références en tout, dont:  
 
-Dont : 
 - 26616 journal articles (21390 traditionnel, 5228 en ligne)
-- 17956 books
+- 23084 books (17956 monographies ou éditions, et 5131 edited volumes)
 - 13368 book chapters
 - 5131 edited volumes
 - 1296 theses
