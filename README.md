@@ -22,12 +22,11 @@ Quelques premières analyses des données sont disponibles ici : https://github.
 
 ## Nota bene 
 
-* Le type d'entrée des "communications" n'a pas été retenu, parce qu'il n'y a qu'une poignée d'entrées de ce type. 
 * Pour les dates de parution, seul l'année a été retenue. 
 * Le bon ordonnement des noms et prénoms des auteurs ou éditeurs est difficile, il peut donc y avoir des erreurs. 
 * La source de données ne fait pas de distinction entre les URL et les DOI ; par conséquent, ils sont tous répertoriés dans le champ URL. Cependant, peu de DOI sont présents de toute manière. 
-* L'information sur la langue d'une publication a été ajoutée automatiquement, avec le module lingua-py. Cette information peut être éronnée dans certains cas. 
-* Après transformation vers BibTex, l'outil BibTeX-tidy est utilisée : https://flamingtempura.github.io/bibtex-tidy 
+* L'information sur la langue d'une publication a été ajoutée automatiquement, avec le module lingua-py. Cette information peut être éronnée dans certains cas (et sera améliorée à la main). 
+* Après transformation vers BibTex, l'outil BibTeX-tidy a été utilisée : https://flamingtempura.github.io/bibtex-tidy. 
 * Les fichiers résultants de cette procédure sont disponibles dans le dossier `bibtex` et forment la base pour l'importation dans Zotero. 
 * Plusieurs formats d'export de Zotero sont disponibles dans le dossier `formats`. 
 * Des corrections futures des données seront uniquement faits sur Zotero, avec des mises à jours des formats d'export. 
