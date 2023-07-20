@@ -1,3 +1,0 @@
-xviiie_siecle_bibliographie_complet_1_550.csv (text/csv) 18400125 bytes.
-xviiie_siecle_bibliographie_complet_1_550.tsv (text/tsv) 15050906 bytes.
-xviiie_siecle_bibliographie_complet_1_550.xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) 6558550 bytes.
